@@ -1,7 +1,9 @@
 import asyncio
 from database import Database
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
 DB_URL = os.getenv('DBURL')
 
 async def main():
@@ -19,6 +21,8 @@ async def main():
     # await db.add_course("Operating Systems")
 
     # await db.drop_tables()
+    students = await db.show_students()
+    print(students)
 
     await db.close()
 

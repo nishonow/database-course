@@ -13,4 +13,4 @@
 
 ---
 
-The final project repo is [here](https://github.com/nishonow/online-shop)
+### The final project repo is [here](https://github.com/nishonow/online-shop).

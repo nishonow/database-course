@@ -62,6 +62,11 @@ class Database:
                 id,
             )
 
+    async def show_students(self):
+        async with self.pool.acquire() as conn:
+            rows = await conn.fetch("SELECT * FROM students")
+            return rows
+
     async def drop_tables(self):
         async with self.pool.acquire() as conn:
             await conn.execute(
