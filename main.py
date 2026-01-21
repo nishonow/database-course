@@ -1,7 +1,8 @@
 import asyncio
 from database import Database
+import os
 
-DB_URL = "postgresql://postgres:xhvIWIdSZYOSOvTQTEieUFzyiDOJjCCk@caboose.proxy.rlwy.net:56387/railway"
+DB_URL = os.getenv('DBURL')
 
 async def main():
     db = Database(DB_URL)
