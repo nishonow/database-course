@@ -21,9 +21,26 @@ async def main():
     # await db.add_course("Operating Systems")
 
     # await db.drop_tables()
-    students = await db.show_students()
-    print(students)
 
+    # await db.update_student(1, "Crowley")
+    # students = await db.show_students()
+    # print(students)
+
+    # await db.add_student_course(1,2)
+    # await db.add_student_course(1,3)
+
+    # students_courses = await db.show_students_courses(1)
+    # print(students_courses)
+
+    # students_count = await db.count_students()
+    # courses_count = await db.count_courses()
+    # print(students_count, courses_count)
+
+    # all_students_with_courses = await db.get_all_students_with_courses()
+    # print(all_students_with_courses)
+
+    get_student_course_count = await db.get_student_course_count()
+    print(get_student_course_count)
     await db.close()
 
 asyncio.run(main())
