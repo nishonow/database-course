@@ -1,5 +1,9 @@
-## This is a repo for Database course weekly labs
+## This is a repository for Database course weekly labs.
+
 ---
+### All the implemented codes are in `database.py`
+### Functions are called and used in `main.py` and works using env key `DBURL`
+
 ### 3. Basic Operations
 - Implemenented `CREATE TABLE`, `SELECT *` and `DROP TABLE` operations.
 
@@ -145,4 +149,4 @@
 
 ---
 
-### The final project repo is [here](https://github.com/nishonow/online-shop).
+### The final project repository is [here (private)](https://github.com/nishonow/online-shop).
