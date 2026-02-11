@@ -28,3 +28,8 @@ def insert_student(id, name, email):
     query = "INSERT INTO students (id, name, email) VALUES (%s, %s, %s)"
     cursor.execute(query, (id, name, email))
 ```
+
+### Task 3
+- Here is the progress of creating a new role and granting permission and doing not granted query. the command failed because the role does have permission only to `SELECT`:
+
+<img src="https://iili.io/fyg68S1.png" width="600">
