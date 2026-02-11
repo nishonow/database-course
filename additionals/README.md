@@ -2,7 +2,7 @@
 
 ### SQL Injections
 
-### Example 1
+### Task 1
 - Why this code vulnerable to sql injection?
 ```python
 login = input("Login: ")
@@ -17,4 +17,14 @@ login = input("Login: ")
 
 query = "SELECT * FROM accounts WHERE login = %s"
 cursor.execute(query)
+```
+### Task 2
+- The code to insert name and email to the table. The following code is safe from SQL injection because it uses parameterized queries which properly escape user input:
+```python
+name = input("Name: ")
+email = input("Email: ")
+
+def insert_student(id, name, email):
+    query = "INSERT INTO students (id, name, email) VALUES (%s, %s, %s)"
+    cursor.execute(query, (id, name, email))
 ```
