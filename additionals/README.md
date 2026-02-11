@@ -16,7 +16,7 @@ cursor.execute(query)
 login = input("Login: ")
 
 query = "SELECT * FROM accounts WHERE login = %s"
-cursor.execute(query)
+cursor.execute(query, (login,))
 ```
 ### Task 2
 - The code to insert name and email to the table. The following code is safe from SQL injection because it uses parameterized queries which properly escape user input:
