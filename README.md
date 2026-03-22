@@ -149,4 +149,5 @@
 
 ---
 
-### The final project repository is [here (private)](https://github.com/nishonow/online-shop).
+### The final project repository is [E-commerce platform](https://github.com/nishonow/online-shop).
+### Team project [AI assistant](https://github.com/nishonow/ai-assistant-teachers).
